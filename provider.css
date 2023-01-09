@@ -1,0 +1,294 @@
+.button5 {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color:#9a9aeb;
+  font-size:30px;
+  font-family:arial;
+  font-weight:bold;
+  border: 3px solid #FAF9F6;
+  padding:5px;
+}
+body {
+   background-color: #2F3C7E;
+   animation: fadeInAnimation ease 3s;
+   animation-iteration-count: 1;
+   animation-fill-mode: forwards;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+}
+}
+/* Edit the text box */
+input {
+  width: 10%;
+}
+input[type=text] {
+  width: 300px;
+  padding: 12px 20px;
+  margin-left:10px;
+  box-sizing: border-box;
+  align:center;
+  background-color: #2F3C7E;
+  color: #FAF9F6;
+  border-width:5px;
+  padding: 10px 10px;
+  border-style:solid;
+  border-color:#E2D1F9;
+  font-family:arial;
+  color:#FAF9F6;
+  font-size:20px;
+}
+textarea {
+  width: 500px;
+  height: 150px;
+  margin-left:10px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border-width: 5px;
+  border-style:solid;
+  border-color:#E2D1F9;
+  background-color: #2F3C7E;
+  resize: none;
+  font-family:arial;
+  color:#FAF9F6;
+  font-size:20px;
+}
+select {
+  width: 400px;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: white;
+  margin-left:10px;
+}
+/* Edit the submit button */
+input[type=submit] {
+  background-color: #d99a6c;
+  border: none;
+  padding: 16px 32px;
+  text-decoration: none;
+  padding: 16px;
+  font-size: 16px;
+  font-family:arial;
+  font-weight:bold;
+  color:#FAF9F6;
+  margin-left:10px;
+  cursor: pointer;
+  width:500px;
+}
+/* Edit "provider name" and "additional info" text */
+label[for="provider_name"], label[for="additional"], label[for="provider_pronouns"], label[for="provider_phone_number"],label[for="provider_zip"], label[for="how"]{
+  display: block;
+  padding: 12px 0;
+  font-size:25px;
+  font-family:arial;
+  font-weight:bold;
+  color:#FAF9F6;
+  margin-left:10px;
+  width:500px;
+}
+
+/* The container must be positioned relative: */
+.custom-select {
+  position: relative;
+  font-family: Arial;
+  color: #FAF9F6;
+  font-size: 20px;
+  font-weight:bold;
+  margin-left:10px;
+  width:400px
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: #d99a6c;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #FAF9F6;
+  font-size: 16px;
+  font-weight:bold;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: #d99a6c;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  max-height:250px;
+  overflow:auto;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.option {
+  color:black;
+}
+/* Edit Buttons */
+
+/* Split the screen in half */
+.split {
+  height: 90%;
+  width: 47.7%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: #2F3C7E;
+  border-width:5px;
+  border-style:solid;
+  border-color:#E2D1F9;
+  border-radius: 30px;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: rgb(0 0 0);
+  padding: 160px 0;
+}
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+.button1 {
+  border-radius: 15px;
+  text-align:left;
+  font-family:arial;
+  padding: 16px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  color:#FAF9F6;
+  background-color: #FFD743;
+  width: 400px;
+  font-weight:bold;
+  margin-left:100px;
+  margin-right:0px;
+}
+.button2 {
+  border-radius: 15px;
+  text-align:left;
+  font-family:arial;
+  padding: 16px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  color: #FAF9F6;
+  background-color: #d99a6c;
+  width: 400px;
+  font-weight:bold;
+  margin-left:100px;
+  margin-right:0px;
+  margin-top:3px;
+  margin-bottom:3px;
+}
+.button3 {
+  border-radius: 15px;
+  text-align:left;
+  font-family:arial;
+  padding: 16px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  color: #FAF9F6;
+  background-color: #9a9aeb;
+  width: 400px;
+  font-weight:bold;
+  margin-left:100px;
+  margin-right:0px;
+  margin-bottom:3px;
+}
+.button4 {
+  border-radius: 15px;
+  text-align:left;
+  font-family:arial;
+  padding: 16px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  color: #FAF9F6;
+  background-color: #2F3C7E;
+  width: 400px;
+  font-weight:bold;
+  margin-left:100px;
+  margin-right:0px;
+}
+ /*BUTTON ANIMATIONS*/
+.button1:hover {
+  margin-left:150px;
+  width:350px;
+  margin-right:0px;
+}
+.button2:hover {
+  margin-left:150px;
+  width:350px;
+  margin-right:0px;
+}
+.button3:hover {
+  margin-left:150px;
+  width:350px;
+  margin-right:0px;
+}
+.button4:hover {
+  margin-left:150px;
+  width:350px;
+  margin-right:0px;
+}
